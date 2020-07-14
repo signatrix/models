@@ -142,7 +142,7 @@ def _extract_prediction_tensors(model,
 
     detections_frame = {
         key: tf.expand_dims(value[i], 0)
-        for key, value in detections.iteritems()
+        for key, value in detections.items()
     }
 
     source_id = (
